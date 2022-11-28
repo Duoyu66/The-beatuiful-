@@ -14,3 +14,10 @@ nrm use cnpm
 查看设置的镜像
 npm config get registry
 ```
+```puml
+A -> B
+```
+```mermaid
+    graph LR
+      A --> Z
+```

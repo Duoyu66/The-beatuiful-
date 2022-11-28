@@ -35,4 +35,20 @@
 
 1. componentWillUnmount()
 
-   1                                                                                                                                                                                                                        
+### 路由的基本使用		
+```javascript
+import {BrowserRouter,Link,Routes, Route} from 'react-router-dom'
+import Home from './pages/Layout'
+function App(){
+	return(
+	 <BrowserRouter>
+		<div className="App">
+		<Link to="/home" className="link">首页 </Link>
+		<Routes>  
+			    <Route path="/home" element={<Home/>}></Route>  
+		  </Routes>
+		</div>
+	 </BrowserRouter>
+	);
+}
+```

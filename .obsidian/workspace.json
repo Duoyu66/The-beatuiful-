@@ -1,0 +1,144 @@
+{
+  "main": {
+    "id": "d992f85183295c27",
+    "type": "split",
+    "children": [
+      {
+        "id": "6b58912f235dac29",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3b41640865b455eb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "react/react.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8f1b8a9c83a4f981",
+    "type": "split",
+    "children": [
+      {
+        "id": "1acbe4525ff5aa4c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "540be7f9109997b3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "8f1eea2532c2a3e5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "fedbb591c053e40a",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b69cbc49df4362c5",
+    "type": "split",
+    "children": [
+      {
+        "id": "78862b771702be70",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a1dfd08a5df609fb",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "react/react.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "be40fc391c609931",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "react/react.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0ae57a6a10c66719",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "8102c6b91d87ca47",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "react/react.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "3b41640865b455eb",
+  "lastOpenFiles": [
+    "vue2/小技巧 .md",
+    "react/react.md"
+  ]
+}
