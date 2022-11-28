@@ -36,7 +36,7 @@
 1. componentWillUnmount()
 
 ### 路由的基本使用		
-```javascript
+```js
 import {BrowserRouter,Link,Routes, Route} from 'react-router-dom'
 import Home from './pages/Layout'
 function App(){
@@ -52,3 +52,4 @@ function App(){
 	);
 }
 ```
+## 66
