@@ -8,12 +8,30 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3b41640865b455eb",
+            "id": "4a331b74873c5dcf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "react/react.md",
+                "file": "工程质量管理平台笔记/dome01.md.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "03df16ffbda9c5b2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8587127510337b3b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "工程质量管理平台笔记/dome01.md.md",
                 "mode": "preview",
                 "source": false
               }
@@ -69,7 +87,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "b69cbc49df4362c5",
@@ -85,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "react/react.md",
+                "file": "工程质量管理平台笔记/dome01.md.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "react/react.md",
+                "file": "工程质量管理平台笔记/dome01.md.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,20 +143,21 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "react/react.md"
+                "file": "工程质量管理平台笔记/dome01.md.md"
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
-  "active": "3b41640865b455eb",
+  "active": "8587127510337b3b",
   "lastOpenFiles": [
-    "vue2/小技巧 .md",
-    "react/react.md"
+    "react/react.md",
+    "工程质量管理平台笔记/dome01.md.md",
+    "vue2/小技巧 .md"
   ]
 }

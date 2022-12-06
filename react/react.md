@@ -52,4 +52,8 @@ function App(){
 	);
 }
 ```
-## 66
+### 导入本地图片的方法
+```js
+import logo from '../../asstes/logo.png';
+<img src={logo} alt=""/>
+```
