@@ -57,3 +57,11 @@ function App(){
 import logo from '../../asstes/logo.png';
 <img src={logo} alt=""/>
 ```
+### jsx语法规则
+1.定义虚拟DOM时，不要写引号
+2.标签中混入JS表达式时要用{}
+3.样式的类名指定不要用class，要用className
+4.内联样式，要用style={{key:value}}的形式去写
+5.虚拟DOM必须只有一个根标签
+### 函数式组件
+1.首字母必须大写
