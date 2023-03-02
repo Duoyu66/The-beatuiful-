@@ -65,3 +65,7 @@ import logo from '../../asstes/logo.png';
 5.虚拟DOM必须只有一个根标签
 ### 函数式组件
 1.首字母必须大写
+
+####             this.setState({}) //变相调用render（）
+函数返回对象的简写
+return {data:'data'} ---- ({data:'data'})
