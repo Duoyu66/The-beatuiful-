@@ -4,7 +4,6 @@ https://blog.csdn.net/qq_30632003/article/details/124940407
 
 #### react和vue的区别 (响应式、mvvm mvc 单向数据流)
 
-
 #### 写一个react受控组件
 
 #### redux如何传数据？怎么接数据？什么时候会用到redux

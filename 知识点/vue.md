@@ -11,6 +11,7 @@
 8. destroyed:销毁后 （Dom元素存在，只是不再受vue控制）,卸载watcher，事件监听，子组件。
   ---
 ### 路由
+#### vue路由模式以及实现原理
 #### 路由有哪些钩子函数？
 1. **全局的路由钩子函数**
    1.1 beforeEach(全局前置钩子)意思是每次每一个路由改变的时候都要执行一遍
@@ -184,67 +185,84 @@ Vue.directive('throttle', {
 https://blog.csdn.net/qq_51368103/article/details/124557999
 
 #### 组件库的Button怎么写的？
-
+https://zhuanlan.zhihu.com/p/560488554
 #### vue.config.js里面的devServer有什么作用？
-
+配置跨域
 #### vue响应式
-
+https://blog.csdn.net/weixin_48181168/article/details/120158346
 #### getter和setter的作用
-
+https://blog.csdn.net/weixin_48873376/article/details/108037944
 #### 用过哪些组件库
 
-
-#### vue的双向绑定
-
 #### vue3新特性
-
-#### 虚拟DOM
-
+https://blog.csdn.net/jiang_ziY/article/details/123930027
+#### 虚拟DOM 主要作用？
+https://blog.csdn.net/yiyueqinghui/article/details/105468012
 #### computed和watch
-
+https://blog.csdn.net/m0_62118859/article/details/124455926
 #### hash和history路由
-
+https://blog.csdn.net/zj695133626/article/details/121107628
 #### 数据变更但是界面没有变更是什么原因？
-
+https://blog.csdn.net/weixin_47220950/article/details/116277828
 #### $set
-
-#### vue2和vue3的区别 为什么vue3使用proxy，不再使用Object.defineProperty?
-
+https://blog.csdn.net/qq_45851085/article/details/125064876
+#### vue2和vue3的区别
+https://blog.csdn.net/weixin_54722719/article/details/123069837
+####  为什么vue3使用proxy，不再使用Object.defineProperty?
+https://blog.csdn.net/qq_39765048/article/details/121117167
 #### 子组件如何监听父组件中变动的数据
-
+https://blog.csdn.net/mouday/article/details/109910429
 #### keep-alive
+https://blog.csdn.net/ZYS10000/article/details/122480733
+#### axios二次封装的好处 
+* 二次封装axios主要是为了用到请求拦截器和响应拦截器
+* 拦截请求：可以在请求之前处理一些业务(比如为每个请求带上相应的参数，时间戳等）
+* 拦截响应：可以在服务器返回数据之后处理一些事情（比如对返回的状态进行判断，token是否过期等）
 
-#### axios二次封装的好处 axios的特点 拦截器怎么内部实现拦截？ token放哪？webscoket怎么握手？
+#### axios的特点 
+（1）axios 是一个基于promise的HTTP库，支持promise所有的API
 
+（2）浏览器端/node端（服务器端）都可以使用，浏览器中创建XMLHttpRequests
+
+（3）支持请求／响应拦截器
+
+（4）它可以转换请求数据和响应数据，并对响应回来的内容自动转换成 JSON类型的数据
+
+（5）批量发送多个请求
+
+（6）安全性更高，客户端支持防御XSRF
+
+#### 拦截器怎么内部实现拦截？
+https://blog.csdn.net/hannah2233/article/details/126646242
+
+#### token放哪？
+https://blog.csdn.net/ZDM_9999/article/details/128010403
 #### vue 和 jq接触过吗？
-
+http://www.gaodaima.com/69127.html
 #### vuex里面的数据和全局变量有什么区别
+vuex优点：
+1、vuex的存储时响应式的，当组件vue中store更改，相应的组件用到的地方也会高效的更新
+2、不能直接改变store里面的变量，需要通过dispatch调用action,然后action去commit（mutation），mutation会操作store里面的值，进行数据的改变
+对比vuex和全局变量：
+1、vuex做的就是状态管理，主要时管理状态的一个库，把项目中公用的一些数据进行存储，某一个组件更改了vuex中的数据，其他相关的组件也会得到快速更新，但是全局变量可以任意修改，不是很安全
+2、全局变量可能操作命名污染，但是vuex不会，每个组件可以根据自己vuex的变量名引用不受影响
+3、vuex处理项目负责，嵌套关系复杂的项目效果很明显，针对于demo或者小项目，全局变量也就够用了
 
 #### proxy和reflect搭配使用，讲一下reflect？
 
 #### vue3响应式原理里的weapMap
 
-#### vue的基本原理 双向绑定的原理
-
 #### vue3性能优化
-
-#### 手写发布订阅模式once
-
-#### 虚拟DOM是什么？主要作用？
-
+https://blog.csdn.net/qq_40434213/article/details/119896193
 #### vue中后端没有给key怎么办？
 
-#### vue路由模式以及实现原理
-
 #### vue视图是同步更新的吗？我想立刻拿到更新后的数据怎么办？
-
+不是  解决方法： vm.$nextTick(() => { // …})
 #### vue怎么更改data中的数据
 
 #### vue2的data为什么写成函数形式
-
+目的是为了防止多个组件实例对象之间共用一个data，产生数据污染。采用函数的形式，initData时会将其作为工厂函数都会返回全新data对象，有效规避多实例之间状态污染问题。
 #### 写项目过程中怎么解决数据不同步更新
-
-#### vue为什么在mounted可以获取到DOM节点？
 
 #### v-for遍历能否key做数组下标？vue2的动态数据是用es6的proxy？
 
@@ -252,9 +270,19 @@ https://blog.csdn.net/qq_51368103/article/details/124557999
 vue用Vue-devtools H5用debugger
 
 #### 为什么许多人用vue不用原生js？
-
+**vue优点：**
+1. 数据的自动绑定
+2. 页面参数传递和页面状态管理。
+3. 模块化开发、无刷新保留场景参数更新
+4. 代码的可阅读性（模块化开发带来的）
+5. 基于强大的nodejs，拥有npm包管理器，可以很好滴管理包的版本
+6. 各子组件样式不冲突
+7. 视图,数据,结构分离
+8. 虚拟dom
+9. 各种指令;过滤器
+vue缺点：
+* vue是单页面页面，对于搜索引擎不友好，影响seo。比如两个vue路由（页面），它的路径是这样的：index.html#aaa 和 index.html#bbb，但对于搜索引擎来说，都是同一个页面，就是index.html。这样搜索引擎就无法收录你的页面。
 #### 插件 混入
-
 #### vue底层源码的实现
 
 #### setup介绍一下？ setup在beforecreate执行一次？
