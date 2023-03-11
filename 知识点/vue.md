@@ -76,7 +76,7 @@
 
 使用 eventBus ，其实就是创建一个事件中心，相当于中转站，可以用它来传递事件和接收事件。它的本质是通过创建一个空的 Vue 实例来作为消息传递的对象，通信的组件引入这个实例，通信的组件通过在这个实例上监听和触发事件，来实现消息的传递。
 
-#### action和action有什么区别？
+#### action和mutation有什么区别？
 1、流程顺序
 
 “相应视图—>修改State”拆分成两部分，视图触发Action，Action再触发Mutation。
@@ -100,7 +100,7 @@ Action：可以异步，但不能直接操作State。
 ---
 #### v-show和v-if
 ##### 不同点
-1. v-show：相当于dispaly:none; 占位   频繁切换使用v-show 有更高的初始渲染消耗
+1. v-show：相当于dispaly:none;  频繁切换使用v-show 有更高的初始渲染消耗
 2. v-if:动态的向 DOM 树内添加或者删除 DOM 元素 有更高的切换消耗
 * display:none是不为隐藏的对象保留其物理空间，俗称看不见也摸不着； --> 隐藏元素后,不占位;
 * visible: hidden是为隐藏的对象保留其物理空间的，俗称看不见但摸得着。 --> 隐藏元素后占位.
@@ -131,10 +131,11 @@ vue常用指令有：v-once指令、v-show指令、v-if指令、v-else指令、v
 v-model实现双向绑定的语法糖，常用于表单与组件之间的数据双向绑定.
 ##### 表单实现双向绑定
 1. 原理 分两步骤 v-bind绑定一个value属性 v-on指令给当前元素绑定input事件 可看出v-model绑定在表单上时，v-model其实就是v-bind绑定value和v-on监听input事件的结合体
-2.     ```JavaScript 
+2. 
+   ```JavaScript 
     v-model = v-bind:value + v-on:input
     ```
-2. 实现 用v-bind:value + v-on:input来模拟实现v-model
+4. 实现 用v-bind:value + v-on:input来模拟实现v-model
 
 <input type="text" :value="username" @input="username = $event.target.value" />
 
@@ -205,6 +206,8 @@ https://blog.csdn.net/zj695133626/article/details/121107628
 #### 数据变更但是界面没有变更是什么原因？
 https://blog.csdn.net/weixin_47220950/article/details/116277828
 #### $set
+Vue.set(ttudent,'sex','男')
+this.$set(ttudent,'sex','男')
 https://blog.csdn.net/qq_45851085/article/details/125064876
 #### vue2和vue3的区别
 https://blog.csdn.net/weixin_54722719/article/details/123069837

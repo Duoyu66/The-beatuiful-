@@ -92,6 +92,65 @@ https://blog.csdn.net/weixin_51338875/article/details/127820757
 5. some（） 数组中有没有满足条件的
 6. find（）用来获取数组中满足条件的第一个数据
 7. reduce（）叠加后的效果
+  ##### 数组去重
+* 利用Set去重
+  ```js
+  let a=[1,2,3,4,4,5,5,6];
+  let b=[... new Set(a)]; //[1,2,3,4,5,6];
+  let c=new Set(a);//返回的是一个Set对象
+  ```
+* 利用reduce去重
+  ```js
+   let nn=ac.reduce((pre,cur)=>{
+    if (!pre.includes(cur)){
+        pre.push(cur)
+    }
+    return pre;
+  },[])
+  ```
+
+##### 求数组的最大(小)值
+* 通过Math
+  ```js
+    let ac=[1,2,3,4]
+    console.log(Math.max(... ac)) //4
+    console.log(Math.min(... ac)) //1
+  ```
+* 通过reduce
+  ```js
+      let ac=[1,2,3,4];
+      let maxArr = ac.reduce((pre,cur)=>{
+            return pre>cur?pre:cur
+      })
+  ```
+  #### 数组求和
+  * reduce版
+  ```js
+    let ac=[1,2,3,4];
+    ac.reduce((pre,cur)=>{
+        return pre+cur;
+    })
+  ```
+  * map版
+  ```js
+    function kk(arr) {
+        let sum = 0;
+        ac.map(item => {
+            sum += item
+        })
+        return sum;
+    }
+    ```
+    #### 统计出现次数
+    * reduce版
+   ```js
+       function countArrayELem(array, elem) {
+        return array.reduce((total, cur) => (total += cur == elem ? 1 : 0), 0);
+    }
+
+    let numbers = [1, 2, 3, 1, 5];
+    console.log(countArrayELem(numbers, 1)); //2
+    ```
 ##### 数组sort方法返回值不能可能是？
 ???
 #### BFC
