@@ -255,3 +255,11 @@ https://blog.csdn.net/zxl1990_ok/article/details/125317703
 https://blog.csdn.net/weixin_43376417/article/details/126561767
 #### 手写js原生bind
 https://blog.csdn.net/weixin_48956280/article/details/126467632
+
+#### const为什么不能修改(原因)
+
+#### 如何不让用户打开界面
+
+#### 浏览器打开界面需要打开多少进程
+
+#### vue动态路由的添加
